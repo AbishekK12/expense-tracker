@@ -23,8 +23,8 @@ A beginner-friendly command-line application built with Python to manage daily e
 ### 1. Clone the Repository
 
 ```bash
-git clone <>
-cd expense_tracker
+git clone https://github.com/AbishekK12/expense-tracker.git
+cd expense-tracker
 ```
 
 ### 2. Create a Virtual Environment
@@ -74,11 +74,28 @@ python -m pytest -v
 ```text
 expense_tracker/
 ├── main.py
-├── expenses.json
+├── expense.json
 ├── requirements.txt
 ├── README.md
 ├── tracker/
+│   ├── __init__.py
+│   ├── expense.py
+│   ├── validation.py
+│   ├── storage.py
+│   ├── add_expense.py
+│   ├── view_expenses.py
+│   ├── delete_expense.py
+│   ├── calculate_total.py
+│   └── category_sum.py
 └── tests/
+    ├── test_expense.py
+    ├── test_validation.py
+    ├── test_storage.py
+    ├── test_add_expense.py
+    ├── test_view_expenses.py
+    ├── test_delete_expense.py
+    ├── test_calculate_total.py
+    └── test_category_summary.py
 ```
 
 ## 💻 Example Output
@@ -104,7 +121,22 @@ Entertainment: ₹300.00
 Total Spending: ₹870.00
 ```
 
-*The example values are illustrative.*
+*Note: The example values are illustrative. Actual results depend on the expenses you enter.*
+
+## ✅ Program Checklist
+
+- [x] Create an `Expense` class.
+- [x] Add new expenses.
+- [x] View all saved expenses.
+- [x] Delete expenses by ID.
+- [x] Calculate total expenses.
+- [x] Display totals by category.
+- [x] Save and load expenses using JSON.
+- [x] Validate user input.
+- [x] Handle invalid input using exceptions.
+- [x] Write automated tests using Pytest.
+- [x] Create a README with setup and run instructions.
+- [x] Upload the project to GitHub.
 
 ## 🎯 Concepts Practiced
 
